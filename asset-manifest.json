@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/e-commerce-app-audiophile/static/css/main.236aaa40.css",
+    "main.js": "/e-commerce-app-audiophile/static/js/main.52202cac.js",
+    "static/media/image-header.jpg": "/e-commerce-app-audiophile/static/media/image-header.d200a3583e72c7981f46.jpg",
+    "static/media/image-hero.jpg": "/e-commerce-app-audiophile/static/media/image-hero.55c18e980adf7658ae26.jpg",
+    "static/media/image-speaker-zx7.jpg": "/e-commerce-app-audiophile/static/media/image-speaker-zx7.173a4cb5c7acfc7f300c.jpg",
+    "index.html": "/e-commerce-app-audiophile/index.html",
+    "main.236aaa40.css.map": "/e-commerce-app-audiophile/static/css/main.236aaa40.css.map",
+    "main.52202cac.js.map": "/e-commerce-app-audiophile/static/js/main.52202cac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.236aaa40.css",
+    "static/js/main.52202cac.js"
+  ]
+}
