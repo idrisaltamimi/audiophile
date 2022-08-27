@@ -15,7 +15,7 @@ export default function Footer() {
                      onClick={toTopSmooth}
                      className='footer__contact--logo'>
                      <img
-                        src={'../assets/shared/desktop/logo.svg'}
+                        src={'../../assets/shared/desktop/logo.svg'}
                         alt='audiophile logo' />
                   </Link>
 

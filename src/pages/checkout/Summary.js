@@ -14,7 +14,7 @@ export default function Summary() {
             <div className='summary__products'>
                {cartData(cartArr).map(({ slug, name, price }) => (
                   <div key={slug} className='summary__product'>
-                     <img src={`./assets/cart/image-${slug}.jpg`} alt={name} className='summary__img' />
+                     <img src={`../../assets/cart/image-${slug}.jpg`} alt={name} className='summary__img' />
                      <div>
                         <h5>{name}</h5>
                         <p className='summary__product-price'>$ {price.toLocaleString()}</p>

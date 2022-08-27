@@ -14,7 +14,7 @@ export default function CategoriesList({ closeNav }) {
                }}>
                <img
                   alt={`a png of a ${category}`}
-                  src={`../assets/shared/desktop/image-category-thumbnail-${category}.png`}
+                  src={`../../assets/shared/desktop/image-category-thumbnail-${category}.png`}
                   className='home__categories--image' />
 
                <p className='home__categories--title'>{category}</p>

@@ -1724,6 +1724,10 @@ input::placeholder {
 }
 
 /* radio */
+.checkout__radio * {
+   cursor: pointer;
+}
+
 .checkout__radio {
    position: relative;
 
@@ -1803,6 +1807,9 @@ input::placeholder {
    border-radius: 8px;
 }
 
+.radio-border:hover {
+   border: 1px solid var(--clr-accent);
+}
 
 .checkout__radio>input[type="radio"]:focus+.radio-border,
 .checkout__radio>input[type="radio"]:checked+.radio-border {

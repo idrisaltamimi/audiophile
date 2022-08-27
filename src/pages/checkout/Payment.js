@@ -71,7 +71,7 @@ export default function Payment() {
 
          {!isEMoney &&
             <div className='checkout__cash'>
-               <img src='./assets/checkout/icon-cash-on-delivery.svg' alt='' />
+               <img src='../../assets/checkout/icon-cash-on-delivery.svg' alt='' />
                <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
             </div>}
       </div>
