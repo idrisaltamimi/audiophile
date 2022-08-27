@@ -9,7 +9,7 @@ export default function CategoriesList({ closeNav }) {
             <Link key={category} to={`/${category}`} className='home__categories--nav'
                onClick={() => {
                   window.scrollTo(0, 0)
-                  return closeNav()
+                  closeNav()
                }}>
                <img
                   alt={`a png of a ${category}`}
