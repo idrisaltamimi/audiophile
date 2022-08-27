@@ -45,7 +45,7 @@ export default function Header() {
                <Link to='/' onClick={removeFocus}>
                   <img
                      className='header__main--logo'
-                     src='../../assets/shared/desktop/logo.svg'
+                     src={require('../../assets/shared/desktop/logo.svg').default}
                      alt='audiophile logo' />
                </Link>
 
@@ -63,7 +63,7 @@ export default function Header() {
                      {cartCount > 0 && <p className={counterClass}>{cartCount}</p>}
                      <img
                         className='header__main--cart-icon'
-                        src='../../assets/shared/desktop/icon-cart.svg'
+                        src={require('../../assets/shared/desktop/icon-cart.svg').default}
                         alt='cart icon' />
                   </div>
                </button>
