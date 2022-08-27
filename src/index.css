@@ -404,7 +404,7 @@ input::placeholder {
 /* header bottom  */
 .header__image {
    background-color: var(--clr-lighter-dark);
-   background-image: url('https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/home/mobile/image-header.jpg?raw=true');
+   background-image: url("../public/assets/home/mobile/image-header.jpg");
    background-size: cover;
    background-position: center -90px;
    background-blend-mode: difference;
@@ -495,7 +495,7 @@ input::placeholder {
 
    /* header bottom */
    .header__image {
-      background-image: url('https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/home/tablet/image-header.jpg?raw=true');
+      background-image: url("../public/assets/home/tablet/image-header.jpg");
    }
 
    .header__bottom {
@@ -558,7 +558,7 @@ input::placeholder {
 
    /* header bottom */
    .header__image {
-      background-image: url('https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/home/desktop/image-hero.jpg?raw=true');
+      background-image: url("../public/assets/home/desktop/image-hero.jpg");
    }
 
    .header__bottom {
@@ -926,7 +926,7 @@ input::placeholder {
 /* product 2 */
 .home__products--item-mid {
    background-color: var(--clr-grey);
-   background-image: url('https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/home/mobile/image-speaker-zx7.jpg?raw=true');
+   background-image: url("../public/assets/home/mobile/image-speaker-zx7.jpg");
    background-size: cover;
    background-position: center center;
    background-blend-mode: multiply;
@@ -946,7 +946,7 @@ input::placeholder {
 /* Media Queries home product 2 */
 @media (min-width: 376px) {
    .home__products--item-mid {
-      background-image: url("https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/home/tablet/image-speaker-zx7.jpg?raw=true");
+      background-image: url("../public/assets/home/tablet/image-speaker-zx7.jpg");
 
    }
 
@@ -959,7 +959,7 @@ input::placeholder {
 
 @media (min-width: 769px) {
    .home__products--item-mid {
-      background-image: url('https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/home/desktop/image-speaker-zx7.jpg?raw=true');
+      background-image: url("../public/assets/home/desktop/image-speaker-zx7.jpg");
    }
 
    .home__products--item-mid {
