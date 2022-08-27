@@ -8,8 +8,8 @@ export default function CategoriesList({ closeNav }) {
          {categoriesArr.map(category => (
             <Link key={category} to={`/${category}`} className='home__categories--nav'
                onClick={() => {
-                  window.screenTo(0, 0)
-                  closeNav()
+                  window.scrollTo(0, 0)
+                  return closeNav()
                }}>
                <img
                   alt={`a png of a ${category}`}
