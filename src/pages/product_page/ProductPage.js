@@ -44,13 +44,13 @@ export default function ProductPage({ productId }) {
                <div key={desktop} className={'product__gallery-img' + index} >
                   <picture >
                      <source
-                        srcSet={"../." + desktop} media='(min-width: 769px)' />
+                        srcSet={desktop} media='(min-width: 769px)' />
 
                      <source
-                        srcSet={"../." + tablet} media='(min-width: 376px)' />
+                        srcSet={tablet} media='(min-width: 376px)' />
 
                      <img className='footer__best-gear--img' alt={"a picture of " + productData.name}
-                        src={"../." + mobile} />
+                        src={mobile} />
                   </picture>
                </div>
             ))}
@@ -64,13 +64,13 @@ export default function ProductPage({ productId }) {
                   <div key={slug} className={'product__others product__others' + index}>
                      <picture >
                         <source
-                           srcSet={"../." + image.desktop} media='(min-width: 769px)' />
+                           srcSet={image.desktop} media='(min-width: 769px)' />
 
                         <source
-                           srcSet={"../." + image.tablet} media='(min-width: 376px)' />
+                           srcSet={image.tablet} media='(min-width: 376px)' />
 
                         <img className='footer__best-gear--img' alt={"a picture of " + name}
-                           src={"../." + image.mobile} />
+                           src={image.mobile} />
                      </picture>
 
                      <h4 className='product__subtitle others__title'>{name}</h4>

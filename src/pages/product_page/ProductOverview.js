@@ -23,13 +23,13 @@ export default function ProductOverview({ productData, productName }) {
          <section className='product__section product__section-style product__top'>
             <picture>
                <source
-                  srcSet={"../." + productData.image.desktop} media='(min-width: 769px)' />
+                  srcSet={productData.image.desktop} media='(min-width: 769px)' />
 
                <source
-                  srcSet={"../." + productData.image.tablet} media='(min-width: 376px)' />
+                  srcSet={productData.image.tablet} media='(min-width: 376px)' />
 
                <img className='footer__best-gear--img product__top-img' alt={"a picture of " + productData.name}
-                  src={"../." + productData.image.mobile} />
+                  src={productData.image.mobile} />
             </picture>
 
             <div className='product__info-container'>

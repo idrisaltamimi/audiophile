@@ -5,13 +5,13 @@ export default function BestGear() {
       <section className='footer__best-gear'>
          <picture>
             <source
-               srcSet={'../assets/shared/desktop/image-best-gear.jpg'} media='(min-width: 769px)' />
+               srcSet={'https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/shared/desktop/image-best-gear.jpg?raw=true'} media='(min-width: 769px)' />
 
             <source
-               srcSet={'../assets/shared/tablet/image-best-gear.jpg'} media='(min-width: 376px)' />
+               srcSet={'https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/shared/tablet/image-best-gear.jpg?raw=true'} media='(min-width: 376px)' />
 
             <img className='footer__best-gear--img' alt='a png of zx7 speaker'
-               src={'../assets/shared/mobile/image-best-gear.jpg'} />
+               src={'https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/shared/mobile/image-best-gear.jpg?raw=true'} />
          </picture>
          <div className='footer__best-gear--container-bottom'>
             <h2 className='footer__best-gear--title'>Bringing you the <span className='color-accent'>best</span> audio gear</h2>
