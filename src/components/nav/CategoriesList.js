@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import categoriesArr from '../../data/category_id'
-import { toTopSmooth } from '../../utils/no_focus'
 
 export default function CategoriesList({ closeNav }) {
    return (
       <section className='home__categories'>
          {categoriesArr.map(category => (
             <Link key={category} to={`/${category}`} className='home__categories--nav'
-               onClick={(e) => {
-                  toTopSmooth(e)
+               onClick={() => {
+                  window.screenTo(0, 0)
                   closeNav()
                }}>
                <img

@@ -93,7 +93,7 @@ ul {
 }
 
 button {
-   border: 1px solid var(--clr-light);
+   border: none;
    background: var(--clr-light);
    white-space: nowrap;
    cursor: pointer;
@@ -103,9 +103,12 @@ button {
 
 a:active,
 button:active {
-   border: none;
    outline: none;
    box-shadow: none;
+}
+
+a:active {
+   border: none;
 }
 
 label,
