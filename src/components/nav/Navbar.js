@@ -13,7 +13,7 @@ export default function Navbar({ width, isNavOpen, closeNav }) {
          {(width < 769) &&
             <Modal open={isNavOpen} modalClass={'nav-modal'} close={closeNav}>
                <div className='nav_modal_container'>
-                  <CategoriesList claseNav={closeNav} />
+                  <CategoriesList closeNav={closeNav} />
                </div>
             </Modal>}
 
