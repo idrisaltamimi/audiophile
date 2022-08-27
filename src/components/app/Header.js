@@ -46,10 +46,10 @@ export default function Header() {
                   onClick={() => openNav()} />
 
                <Link to='/' onClick={removeFocus}>
-                  <img
+                  {/* <img
                      className='header__main--logo'
                      src={logo}
-                     alt='audiophile logo' />
+                     alt='audiophile logo' /> */}
                </Link>
 
                <Navbar
@@ -64,10 +64,10 @@ export default function Header() {
                }}>
                   <div className='cart__logo-container'>
                      {cartCount > 0 && <p className={counterClass}>{cartCount}</p>}
-                     <img
+                     {/* <img
                         className='header__main--cart-icon'
                         src={cart}
-                        alt='cart icon' />
+                        alt='cart icon' /> */}
                   </div>
                </button>
             </section>
