@@ -13,7 +13,7 @@ export default function Success() {
       <>
          <Modal open={true} close={false} modalClass='success__modal' overlay='success__overlay'>
             <div className='success'>
-               <img src='../../assets/checkout/icon-order-confirmation.svg' alt='' className='success__img' />
+               <img src='./assets/checkout/icon-order-confirmation.svg' alt='' className='success__img' />
 
                <h4 className='success__title'>THANK YOU <br />FOR YOUR ORDER</h4>
 
@@ -21,7 +21,7 @@ export default function Success() {
 
                <div className='success__containers'>
                   <div className='success__container'>
-                     <img src={`../../assets/cart/image-${cartData(cartArr)[0].slug}.jpg`} alt='' />
+                     <img src={`./assets/cart/image-${cartData(cartArr)[0].slug}.jpg`} alt='' />
                      <div className='success__subcontainer'>
                         <p>{cartData(cartArr)[0].name}</p>
                         <p>$ {cartData(cartArr)[0].price.toLocaleString()}</p>

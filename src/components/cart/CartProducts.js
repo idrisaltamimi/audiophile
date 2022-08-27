@@ -16,7 +16,7 @@ export default function CartProducts({ closeCart }) {
             <div className='cart__products'>
                {cartData(cartArr).map(({ slug, name, price }) => (
                   <div key={slug} className='cart__product'>
-                     <img src={`../../assets/cart/image-${slug}.jpg`} alt={name} className='cart__img' />
+                     <img src={`./assets/cart/image-${slug}.jpg`} alt={name} className='cart__img' />
                      <h5>{name}</h5>
                      <p className='cart__product-price'>$ {price.toLocaleString()}</p>
                      <div className='cart__count-container'>

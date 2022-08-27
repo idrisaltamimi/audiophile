@@ -8,13 +8,13 @@ export default function Products() {
             <div className='home__products--container-top'>
                <picture>
                   <source
-                     srcSet={'../../assets/home/desktop/image-speaker-zx9.png'} media='(min-width: 769px)' />
+                     srcSet={'./assets/home/desktop/image-speaker-zx9.png'} media='(min-width: 769px)' />
 
                   <source
-                     srcSet={'../../assets/home/tablet/image-speaker-zx9.png'} media='(min-width: 376px)' />
+                     srcSet={'./assets/home/tablet/image-speaker-zx9.png'} media='(min-width: 376px)' />
 
                   <img className='home__products--top-img' alt='a png of zx9 speaker'
-                     src={'../../assets/home/mobile/image-speaker-zx9.png'} />
+                     src={'./assets/home/mobile/image-speaker-zx9.png'} />
                </picture>
                <div className='home__products--circles' />
             </div>
@@ -42,13 +42,13 @@ export default function Products() {
          <section className='home__products--item-bottom home__products--sections'>
             <picture>
                <source
-                  srcSet={'../../assets/home/desktop/image-earphones-yx1.jpg'} media='(min-width: 1300px)' />
+                  srcSet={'./assets/home/desktop/image-earphones-yx1.jpg'} media='(min-width: 1300px)' />
 
                <source
-                  srcSet={'../../assets/home/tablet/image-earphones-yx1.jpg'} media='(min-width: 835px)' />
+                  srcSet={'./assets/home/tablet/image-earphones-yx1.jpg'} media='(min-width: 835px)' />
 
                <img className='home__products--bottom-img home__products--sections' alt='a png of zx7 speaker'
-                  src={'../../assets/home/mobile/image-earphones-yx1.jpg'} />
+                  src={'./assets/home/mobile/image-earphones-yx1.jpg'} />
             </picture>
 
             <div className='home__products--background-bottom home__products--sections'>

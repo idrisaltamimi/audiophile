@@ -13,9 +13,9 @@ export default function Category(props) {
             <h2>{categoryName}</h2>
          </div>
          {categoryProducts.map(({ slug, name, categoryImage, description, isNew, category }) => {
-            const desktopImg = "../." + categoryImage.desktop
-            const tabletImg = "../." + categoryImage.tablet
-            const mobileImg = "../." + categoryImage.mobile
+            const desktopImg = categoryImage.desktop
+            const tabletImg = categoryImage.tablet
+            const mobileImg = categoryImage.mobile
             const productName = name.substring(0, name.lastIndexOf(' '))
             return (
                <section key={slug} className='category__product-container'>
