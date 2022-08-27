@@ -5,6 +5,9 @@ import { removeFocus } from '../../utils/no_focus'
 import CartModal from '../cart/CartModal'
 import Navbar from '../nav/Navbar'
 
+import logo from '../../assets/shared/desktop/logo.svg'
+import cart from '../../assets/shared/desktop/icon-cart.svg'
+
 export default function Header() {
    const { cartArr } = useContext(CartContext)
 
@@ -45,7 +48,7 @@ export default function Header() {
                <Link to='/' onClick={removeFocus}>
                   <img
                      className='header__main--logo'
-                     src={require('../../assets/shared/desktop/logo.svg').default}
+                     src={logo}
                      alt='audiophile logo' />
                </Link>
 
@@ -63,7 +66,7 @@ export default function Header() {
                      {cartCount > 0 && <p className={counterClass}>{cartCount}</p>}
                      <img
                         className='header__main--cart-icon'
-                        src={require('../../assets/shared/desktop/icon-cart.svg').default}
+                        src={cart}
                         alt='cart icon' />
                   </div>
                </button>
