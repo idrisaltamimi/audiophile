@@ -23,7 +23,7 @@ export default function Products() {
 
                <p className='home__products--paragraph paragraph'>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
 
-               <Link to='/speakers/zx7-speaker'
+               <Link to='/zx7-speaker'
                   className='home__products--btn-dark link-btn home__first-btn'>
                   see product
                </Link>
@@ -33,7 +33,7 @@ export default function Products() {
          <section className='home__products--item-mid home__products--sections'>
             <h4 className='home__products--title'>ZX9 SPEAKER</h4>
 
-            <Link to='/speakers/zx9-speaker'
+            <Link to='/zx9-speaker'
                className='home__products--btn link-btn'>
                see product
             </Link>
@@ -54,7 +54,7 @@ export default function Products() {
             <div className='home__products--background-bottom home__products--sections'>
                <h4 className='home__products--title'>YX1 EARPHONES</h4>
 
-               <Link to='/earphones/yx1-earphones'
+               <Link to='/yx1-earphones'
                   className='home__products--btn link-btn'>
                   see product
                </Link>

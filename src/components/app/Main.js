@@ -19,7 +19,7 @@ export default function Main() {
          element={<Category categoryName={category} />} />
    )
    const productsRoutes = data.map(({ slug, category }) =>
-      <Route key={slug} path={`/${category}/${slug}`}
+      <Route key={slug} path={`/${slug}`}
          element={<ProductPage productId={slug} />} />
    )
    return (

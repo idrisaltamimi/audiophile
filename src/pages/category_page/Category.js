@@ -37,7 +37,7 @@ export default function Category(props) {
 
                      <p className='paragraph'>{description}</p>
 
-                     <Link to={`/${categoryName}/${slug}`}
+                     <Link to={`/${slug}`}
                         className='link-btn category__product-info-btn'>
                         see Product
                      </Link>
