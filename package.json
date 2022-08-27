@@ -1,7 +1,7 @@
 {
   "name": "e-commerce",
   "version": "0.1.0",
-  "homepage": "https://idrisaltamimi.github.io/e-commerce-app-audiophile",
+  "homepage": "https://idrisaltamimi.github.io/audiophile",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",

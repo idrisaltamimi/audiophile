@@ -9,13 +9,14 @@ import { removeFocus } from '../../utils/no_focus'
 
 export default function CartProducts({ closeCart }) {
    const { cartArr, addItem, removeItem } = useContext(CartContext)
+
    return (
       <>
          {cartArr.length > 0 &&
             <div className='cart__products'>
                {cartData(cartArr).map(({ slug, name, price }) => (
                   <div key={slug} className='cart__product'>
-                     <img src={`https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/cart/image-${slug}.jpg?raw=true`} alt={name} className='cart__img' />
+                     <img src={`../../assets/cart/image-${slug}.jpg`} alt={name} className='cart__img' />
                      <h5>{name}</h5>
                      <p className='cart__product-price'>$ {price.toLocaleString()}</p>
                      <div className='cart__count-container'>

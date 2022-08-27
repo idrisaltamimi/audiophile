@@ -5,9 +5,6 @@ import { removeFocus } from '../../utils/no_focus'
 import CartModal from '../cart/CartModal'
 import Navbar from '../nav/Navbar'
 
-import logo from '../../assets/shared/desktop/logo.svg'
-import cart from '../../assets/shared/desktop/icon-cart.svg'
-
 export default function Header() {
    const { cartArr } = useContext(CartContext)
 
@@ -46,10 +43,10 @@ export default function Header() {
                   onClick={() => openNav()} />
 
                <Link to='/' onClick={removeFocus}>
-                  {/* <img
+                  <img
                      className='header__main--logo'
-                     src={logo}
-                     alt='audiophile logo' /> */}
+                     src={'../assets/shared/desktop/logo.svg'}
+                     alt='audiophile logo' />
                </Link>
 
                <Navbar
@@ -64,10 +61,10 @@ export default function Header() {
                }}>
                   <div className='cart__logo-container'>
                      {cartCount > 0 && <p className={counterClass}>{cartCount}</p>}
-                     {/* <img
+                     <img
                         className='header__main--cart-icon'
-                        src={cart}
-                        alt='cart icon' /> */}
+                        src={'../assets/shared/desktop/icon-cart.svg'}
+                        alt='cart icon' />
                   </div>
                </button>
             </section>

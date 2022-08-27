@@ -9,7 +9,7 @@ import Footer from './components/app/Footer'
 function App() {
 
    return (
-      <Router>
+      <Router basename="/audiophile">
          <CartContextProvider>
             <Header />
             <Main />

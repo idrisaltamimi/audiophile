@@ -14,7 +14,7 @@ export default function CategoriesList({ closeNav }) {
                }}>
                <img
                   alt={`a png of a ${category}`}
-                  src={`https://github.com/idrisaltamimi/e-commerce-app-audiophile/blob/main/src/assets/shared/desktop/image-category-thumbnail-${category}.png?raw=true`}
+                  src={`./assets/shared/desktop/image-category-thumbnail-${category}.png`}
                   className='home__categories--image' />
 
                <p className='home__categories--title'>{category}</p>
