@@ -2054,6 +2054,10 @@ input::placeholder {
    overflow-y: scroll;
 }
 
+.success>p {
+   margin: 16px 0 32px;
+}
+
 .success::-webkit-scrollbar {
    display: none;
 }
