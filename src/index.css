@@ -48,7 +48,6 @@
 html,
 body {
    width: 100%;
-   height: 100%;
    margin: 0;
    position: absolute;
    top: 0;
@@ -61,8 +60,15 @@ html {
 
 body {
    margin: 0;
-   min-height: 100%;
    overflow-x: hidden;
+
+   height: 100%;
+}
+
+#root {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
 hr {
@@ -2283,6 +2289,11 @@ input::placeholder {
 }
 
 /* Social */
+.footer {
+   margin-top: auto;
+   /* align-self: flex-end; */
+}
+
 .footer__contact {
    background-color: var(--clr-lighter-dark);
    text-align: center;
@@ -2431,4 +2442,30 @@ input::placeholder {
    .footer__contact--logo::before {
       transform: translate(0, -89px);
    }
+}
+
+/*==============
+   *404 Page
+==============*/
+.not-found {
+   margin: 2em 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 1.5em;
+}
+
+.not-found__header {
+   background-color: var(--clr-dark);
+   padding: 2em 0;
+   color: var(--clr-light);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.not-found>h3 {
+   font-size: 1.125rem;
 }
