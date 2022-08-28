@@ -68,7 +68,7 @@ export default function ProductOverview({ productData, productName }) {
                      <div className={addedToCart} >
                         <div className='product-added'>
                            <div>
-                              <img src='../assets/checkout/icon-order-confirmation.svg' alt='' />
+                              <img src='./assets/checkout/icon-order-confirmation.svg' alt='' />
                               <p><strong>{count} item(s) has been added to your cart</strong>. You now have {cartArr.length} in your shopping cart.</p>
                            </div>
                         </div>
