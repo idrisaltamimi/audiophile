@@ -20,7 +20,7 @@ export default function Home() {
                   </Link>
                </section>
             </div>
-            <CategoriesList />
+            <CategoriesList closeNav={false} />
             <Products />
 
          </div>

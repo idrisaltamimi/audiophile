@@ -1189,6 +1189,21 @@ input::placeholder {
    background-color: var(--clr-accent);
 }
 
+.added-to-cart {
+   position: relative;
+}
+
+.added-to-cart::before {
+   content: attr(att);
+   position: absolute;
+   color: rgb(182, 0, 0);
+   top: -16px;
+   left: 0;
+   text-transform: lowercase;
+   font-size: 10px;
+   letter-spacing: -.2px;
+}
+
 .product__count {
    display: flex;
    justify-content: center;

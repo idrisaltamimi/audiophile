@@ -6,6 +6,7 @@ export default function ProductOverview({ productData, productName }) {
 
    const { slug } = productData
    const [count, setCount] = useState(0)
+   const [addedToCart, setAddedToCart] = useState('')
 
    const increment = (e) => {
       e.target.blur()
@@ -17,7 +18,17 @@ export default function ProductOverview({ productData, productName }) {
       if (count < 1) return setCount(0)
       return setCount(prevState => prevState - 1)
    }
+   const handleClick = (e) => {
+      (count > 0) && setAddedToCart('added-to-cart')
+      e.target.blur()
+      return addToCart(slug, count)
+   }
 
+   if (addedToCart !== '') {
+      setTimeout(() => {
+         setAddedToCart('')
+      }, 2000)
+   }
    return (
       <>
          <section className='product__section product__section-style product__top'>
@@ -48,11 +59,12 @@ export default function ProductOverview({ productData, productName }) {
                      <button className='product__count product__count-btn' onClick={(e) => increment(e)}>+</button>
                   </div>
 
-                  <button className='link-btn product__add-to-cart-btn add-to-cart-btn' onClick={(e) => {
-                     e.target.blur()
-                     return addToCart(slug, count)
-                  }
-                  }>add to cart</button>
+                  <button
+                     att={`* ${count} item(s) added to cart`}
+                     className={`link-btn product__add-to-cart-btn add-to-cart-btn ${addedToCart}`}
+                     onClick={(e) => handleClick(e)}>
+                     add to cart
+                  </button>
                </div>
             </div>
          </section>
