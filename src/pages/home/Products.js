@@ -23,7 +23,7 @@ export default function Products() {
 
                <p className='home__products--paragraph paragraph'>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
 
-               <Link to='/zx7-speaker'
+               <Link to='/zx9-speaker'
                   className='home__products--btn-dark link-btn home__first-btn'>
                   see product
                </Link>
@@ -31,9 +31,9 @@ export default function Products() {
          </section>
 
          <section className='home__products--item-mid home__products--sections'>
-            <h4 className='home__products--title'>ZX9 SPEAKER</h4>
+            <h4 className='home__products--title'>ZX7 SPEAKER</h4>
 
-            <Link to='/zx9-speaker'
+            <Link to='/zx7-speaker'
                className='home__products--btn link-btn'>
                see product
             </Link>
