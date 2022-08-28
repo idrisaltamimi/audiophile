@@ -444,6 +444,11 @@ input::placeholder {
 }
 
 /* hamburger */
+.hamburger {
+   width: 16px;
+   padding: 2em 0;
+}
+
 .header__main--hamburger,
 .header__main--hamburger::after,
 .header__main--hamburger::before {
@@ -483,7 +488,7 @@ input::placeholder {
       align-items: center;
    }
 
-   .header__main--hamburger {
+   .hamburger {
       grid-area: hamburger;
    }
 

@@ -39,8 +39,9 @@ export default function Header() {
          <header className='header '>
 
             <section className='header__main'>
-               <div className='header__main--hamburger'
-                  onClick={() => openNav()} />
+               <div className='hamburger' onClick={() => openNav()}>
+                  <div className='header__main--hamburger' />
+               </div>
 
                <Link to='/' onClick={removeFocus}>
                   <img
