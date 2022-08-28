@@ -1200,20 +1200,44 @@ input::placeholder {
    background-color: var(--clr-accent);
 }
 
+/* added to cart */
 .added-to-cart {
-   position: relative;
+   position: fixed;
+   width: 100%;
+   /* height: 100%; */
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, .1);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-.added-to-cart::before {
-   content: attr(att);
+.product-added {
    position: absolute;
-   color: rgb(182, 0, 0);
-   top: -16px;
-   left: 0;
-   text-transform: lowercase;
-   font-size: 10px;
-   letter-spacing: -.2px;
+   top: 1%;
+   padding: 1.25em;
+   background-color: var(--clr-light);
+   border-radius: 8px;
+   gap: 1.5em;
+   box-shadow: 0 0 20px 10px rgba(0, 0, 0, .25);
 }
+
+.product-added>div {
+   display: flex;
+   align-items: center;
+   gap: 1.5em;
+}
+
+.product-added>div>img {
+   width: 24px;
+   height: 24px;
+}
+
 
 .product__count {
    display: flex;

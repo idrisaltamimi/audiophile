@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react'
 import { CartContext } from '../../context/cartContext'
 
 export default function ProductOverview({ productData, productName }) {
-   const { addToCart } = useContext(CartContext)
+   const { cartArr, addToCart } = useContext(CartContext)
 
    const { slug } = productData
    const [count, setCount] = useState(0)
@@ -60,11 +60,19 @@ export default function ProductOverview({ productData, productName }) {
                   </div>
 
                   <button
-                     att={`* ${count} item(s) added to cart`}
-                     className={`link-btn product__add-to-cart-btn add-to-cart-btn ${addedToCart}`}
+                     className={`link-btn product__add-to-cart-btn add-to-cart-btn`}
                      onClick={(e) => handleClick(e)}>
                      add to cart
                   </button>
+                  {addedToCart !== '' &&
+                     <div className={addedToCart} >
+                        <div className='product-added'>
+                           <div>
+                              <img src='../assets/checkout/icon-order-confirmation.svg' alt='' />
+                              <p><strong>{count} item(s) has been added to your cart</strong>. You now have {cartArr.length} in your shopping cart.</p>
+                           </div>
+                        </div>
+                     </div>}
                </div>
             </div>
          </section>
